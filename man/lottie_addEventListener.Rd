@@ -72,8 +72,12 @@ ui <- fluidPage(
   lottie_animation(
     path = "shinyLottie/example.json",
     name = "my_animation"
-  ) |> lottie_addEventListener(event = "loopComplete", target = "animation",
-        custom_js = "console.log('Animation Complete!');"),
+  ) |>
+  lottie_addEventListener(
+    event = "loopComplete",
+    target = "animation",
+    custom_js = "console.log('Animation Complete!');"
+  ),
   # Create a 'container' event listener that plays an animation when
   # hovering over the button, and another that pauses the animation
   # when hovering stops
@@ -85,7 +89,7 @@ ui <- fluidPage(
     loop = TRUE,
     autoplay = FALSE,
   ) |> lottie_button(inputId = "lottieButton", label = "Lottie",
-        height = "200px", width = "200px") |>
+                     height = "200px", width = "200px") |>
     lottie_addEventListener("mouseenter", "container", state = "play") |>
     lottie_addEventListener("mouseleave", "container", state = "pause")
 )

@@ -16,6 +16,10 @@ A list of HTML tags to be included within the head element of a Shiny applicatio
 Responsible for retrieving the Lottie library and initialising the relevant shinyLottie JavaScript code.
 As such, this function \strong{must} be included within the UI object of a \code{\link[shiny:shinyApp]{shinyApp}} in order to enable shinyLottie functionality.
 }
+\note{
+Calling this function initialises a global object "\code{window.lottieInstances}" once the DOM content is fully loaded.
+This is used to store the Lottie animations that are created using \code{\link{lottie_animation}}.
+}
 \examples{
 \dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 library(shiny)

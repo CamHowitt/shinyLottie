@@ -26,11 +26,9 @@
 #' )
 #'
 #' server <- function(input, output, session) {
-#'
 #'   observeEvent(input$my_button, {
-#'     print("Button Pressed")
+#'     print("Button pressed")
 #'   })
-#'
 #' }
 #'
 #' shinyApp(ui, server)

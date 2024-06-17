@@ -21,9 +21,13 @@
 #'   lottie_animation(
 #'     path = "shinyLottie/example.json",
 #'     name = "my_animation"
-#'   ) |> lottie_addEventListener(event = "loopComplete", target = "animation",
-#'         custom_js = "Shiny.setInputValue('playCount',
-#'          lottieInstances.my_animation.playCount, {priority: 'event'});"),
+#'   ) |>
+#'     lottie_addEventListener(
+#'       event = "loopComplete",
+#'       target = "animation",
+#'       custom_js = "Shiny.setInputValue('playCount',
+#'       lottieInstances.my_animation.playCount, {priority: 'event'});"
+#'     ),
 #'   actionButton("removeEventListener", "Remove Event Listener")
 #' )
 #'
@@ -35,7 +39,8 @@
 #'
 #'   # Removing the event listener ceases the notifications
 #'   observeEvent(input$removeEventListener, {
-#'     lottie_removeEventListener(name = "my_animation", event = "loopComplete", target = "animation")
+#'     lottie_removeEventListener(name = "my_animation", event = "loopComplete",
+#'                                target = "animation")
 #'   })
 #' }
 #'

@@ -6,6 +6,10 @@
 #' @param version A character string specifying the version of the Lottie library to source via CDN.
 #' @return A list of HTML tags to be included within the head element of a Shiny application.
 #'
+#' @note
+#' Calling this function initialises a global object "\code{window.lottieInstances}" once the DOM content is fully loaded.
+#' This is used to store the Lottie animations that are created using \code{\link{lottie_animation}}.
+#'
 #' @examplesIf interactive()
 #' library(shiny)
 #' library(shinyLottie)
