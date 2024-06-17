@@ -4,7 +4,7 @@ Title: Seamlessly Integrate Lottie Animation into Shiny Applications
 Version: 1.0.0
 Author: Cameron Howitt
 Maintainer: Cameron Howitt <shinylottie@gmail.com>
-Description: The shinyLottie package allows users to easily integrate and control Lottie animations within Shiny applications, without the need for idiosyncratic expression or use of JavaScript. This includes utilities for generating animation instances, controlling playback, manipulating animation properties, and more.
+Description: Easily integrate and control Lottie animations within Shiny applications, without the need for idiosyncratic expression or use of JavaScript. This includes utilities for generating animation instances, controlling playback, manipulating animation properties, and more.
 Imports:
     shiny,
     jsonlite,
