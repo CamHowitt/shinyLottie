@@ -14,8 +14,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-<center>![](images/shinyLottie.gif){width="600"}</center>
-
 shinyLottie is an R package that allows users to easily integrate and control [Lottie animations](https://airbnb.io/lottie/#/) within [Shiny applications](https://shiny.posit.co/), without the need for idiosyncratic expression or use of JavaScript.
 
 This document introduces the most basic implementation of this package using the following functions:
