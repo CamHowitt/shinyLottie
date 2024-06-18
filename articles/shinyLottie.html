@@ -77,26 +77,27 @@
 
     
     
-<p>shinyLottie is an R package that allows users to easily integrate and
-control <a href="https://airbnb.io/lottie/#/" class="external-link">Lottie animations</a>
-within <a href="https://shiny.posit.co/" class="external-link">Shiny applications</a>, without
-the need for idiosyncratic expression or use of JavaScript.</p>
+<p>‘shinyLottie’ is an R package that allows users to easily integrate
+and control <a href="https://airbnb.io/lottie/#/" class="external-link">‘Lottie’
+animations</a> within <a href="https://shiny.posit.co/" class="external-link">‘shiny’
+applications</a>, without the need for idiosyncratic expression or use
+of ‘JavaScript’.</p>
 <p>This document introduces the most basic implementation of this
 package using the following functions:</p>
 <ul>
 <li><p><code><a href="../reference/include_lottie.html">include_lottie()</a></code> is required in order for
-shinyLottie functions to work</p></li>
-<li><p><code><a href="../reference/lottie_animation.html">lottie_animation()</a></code> generates a Lottie animation
-object that can be inserted into a Shiny app’s UI</p></li>
-<li><p><code><a href="../reference/lottie_button.html">lottie_button()</a></code> converts a Lottie animation object
-into a button; this is behaviourally identical to Shiny’s
+‘shinyLottie’ functions to work</p></li>
+<li><p><code><a href="../reference/lottie_animation.html">lottie_animation()</a></code> generates a ‘Lottie’ animation
+object that can be inserted into a ‘shiny’ app’s UI</p></li>
+<li><p><code><a href="../reference/lottie_button.html">lottie_button()</a></code> converts a ‘Lottie’ animation object
+into a button; this is behaviourally identical to
 <code><a href="https://rdrr.io/pkg/shiny/man/actionButton.html" class="external-link">actionButton()</a></code></p></li>
 </ul>
 <div class="section level2">
 <h2 id="animations">Animations<a class="anchor" aria-label="anchor" href="#animations"></a>
 </h2>
-<p>The following example demonstrates how to produce a simple Shiny app
-that includes a Lottie animation.</p>
+<p>The following example demonstrates how to produce a simple ‘shiny’
+app that includes a ‘Lottie’ animation.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://shiny.posit.co/" class="external-link">shiny</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://camhowitt.github.io/shinyLottie/">shinyLottie</a></span><span class="op">)</span></span>
@@ -114,29 +115,29 @@ that includes a Lottie animation.</p>
 <span><span class="fu"><a href="https://rdrr.io/pkg/shiny/man/shinyApp.html" class="external-link">shinyApp</a></span><span class="op">(</span><span class="va">ui</span>, <span class="va">server</span><span class="op">)</span></span></code></pre></div>
 <p>This relies on the use of two functions within the UI:</p>
 <ol style="list-style-type: decimal">
-<li><p><code><a href="../reference/include_lottie.html">include_lottie()</a></code> loads the necessary JavaScript to
-enable Lottie functionality</p></li>
-<li><p><code><a href="../reference/lottie_animation.html">lottie_animation()</a></code> generates a Lottie animation
+<li><p><code><a href="../reference/include_lottie.html">include_lottie()</a></code> loads the necessary ‘JavaScript’ to
+enable ‘Lottie’ functionality</p></li>
+<li><p><code><a href="../reference/lottie_animation.html">lottie_animation()</a></code> generates a ‘Lottie’ animation
 sourced from the supplied <code>path</code> argument</p></li>
 </ol>
 <p>There are two types of <code>path</code> that can be used to
-reference a Lottie animation:</p>
+reference a ‘Lottie’ animation:</p>
 <ol style="list-style-type: decimal">
 <li><p>A local file path to a JSON file - the <code>path</code> used in
 the above app references an example animation that is installed
-alongside shinyLottie</p></li>
+alongside ‘shinyLottie’</p></li>
 <li><p>A URL for web-hosted JSON files (i.e. <a href="https://app.lottiefiles.com/" class="external-link">LottieFiles</a> asset link or <a href="https://www.lottielab.com/?home" class="external-link">LottieLab</a> JSON URL)</p></li>
 </ol>
 <p><code><a href="../reference/lottie_animation.html">lottie_animation()</a></code> also requires that we provide a
 <code>name</code>, which we can then reference when updating the
-animation during Shiny runtime. This process, along with further
+animation during ‘shiny’ runtime. This process, along with further
 arguments that can be supplied to fine-tune playback behaviour, are
 explained in <code><a href="../articles/Controlling-Animations.html">vignette("Controlling-Animations")</a></code>.</p>
 </div>
 <div class="section level2">
 <h2 id="buttons">Buttons<a class="anchor" aria-label="anchor" href="#buttons"></a>
 </h2>
-<p><code><a href="../reference/lottie_button.html">lottie_button()</a></code> makes it simple to convert Lottie
+<p><code><a href="../reference/lottie_button.html">lottie_button()</a></code> makes it simple to convert ‘Lottie’
 animations into functional buttons. The simplest way to do this is to
 pipe in the output of <code><a href="../reference/lottie_animation.html">lottie_animation()</a></code> (this can be done
 with either R’s native <code>|&gt;</code> or <a href="https://magrittr.tidyverse.org/" class="external-link">magrittr’s</a>
@@ -165,7 +166,7 @@ with either R’s native <code>|&gt;</code> or <a href="https://magrittr.tidyver
 <p>Along with the animation object, we must also provide
 <code><a href="../reference/lottie_button.html">lottie_button()</a></code> with an <code>inputId</code>. This makes it
 functionally identical to <code><a href="https://rdrr.io/pkg/shiny/man/actionButton.html" class="external-link">actionButton()</a></code> - we can then
-observe the Shiny input slot of the same name (in this case
+observe the ‘shiny’ input slot of the same name (in this case
 <code>input$my_button</code>) to trigger reactive behaviour. Here, a
 simple message is printed to the console.</p>
 </div>
