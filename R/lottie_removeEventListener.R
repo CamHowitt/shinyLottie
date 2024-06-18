@@ -1,12 +1,14 @@
-#' Remove Event Listener from Lottie Animation
+#' Remove Event Listener from 'Lottie' Animation
 #'
-#' Removes an event listener from a Lottie animation within a Shiny application.
+#' Removes an event listener from a 'Lottie' animation within a 'shiny' application.
 #'
-#' @param name A character string specifying the name of the Lottie animation.
+#' @param name A character string specifying the name of the 'Lottie' animation.
 #' @param event The event to listen for (e.g. "\code{mouseenter}", "\code{mouseleave}" etc.).
 #' @param target The target for the event listener, either \code{"animation"} or \code{"container"}.
 #' @param functionName Optional name of the event handler function to remove. Should only be used if a \code{functionName} was specified when calling \code{\link{lottie_addEventListener}}.
-#' @param session The Shiny session object. Defaults to the current reactive domain.
+#' @param session The 'shiny' session object. Defaults to the current reactive domain.
+#'
+#' @return This function is called for a side effect, and so there is no return value.
 #'
 #' @details When run within a reactive context, sends a custom session message \code{"lottie_js_runJS"} containing the function arguments.
 #'
@@ -16,7 +18,7 @@
 #'
 #' ui <- fluidPage(
 #'   include_lottie(),
-#'   # Create an 'animation' event that updates the 'playCount' Shiny input
+#'   # Create an 'animation' event that updates the 'playCount' input value
 #'   # value after each loop
 #'   lottie_animation(
 #'     path = "shinyLottie/example.json",

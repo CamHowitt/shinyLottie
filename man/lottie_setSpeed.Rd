@@ -2,7 +2,7 @@
 % Please edit documentation in R/lottie_setSpeed.R
 \name{lottie_setSpeed}
 \alias{lottie_setSpeed}
-\title{Adjust Lottie Animation Speed}
+\title{Adjust 'Lottie' Animation Speed}
 \usage{
 lottie_setSpeed(
   speed = 1,
@@ -13,13 +13,16 @@ lottie_setSpeed(
 \arguments{
 \item{speed}{A numeric specifying the desired animation speed.}
 
-\item{name}{A character string specifying the name of the Lottie animation to control.
-The default of "\code{all}" will control all animations within the Shiny application.}
+\item{name}{A character string specifying the name of the 'Lottie' animation to control.
+The default of "\code{all}" will control all animations within the 'shiny' application.}
 
-\item{session}{The Shiny session object. Defaults to the current reactive domain.}
+\item{session}{The 'shiny' session object. Defaults to the current reactive domain.}
+}
+\value{
+This function is called for a side effect, and so there is no return value.
 }
 \description{
-Adjust the speed of an existing Lottie animation.
+Adjust the speed of an existing 'Lottie' animation.
 }
 \details{
 Sends a custom session message \code{"lottie_js_setSpeed"} containing the function arguments.

@@ -1,11 +1,13 @@
-#' @title Control Playback of Lottie Animations
+#' @title Control Playback of 'Lottie' Animations
 #'
-#' @description Control the playback of Lottie animations within a Shiny application.
+#' @description Control the playback of 'Lottie' animations within a 'shiny' application.
 #'
-#' @param name A character string specifying the name of the Lottie animation to control.
-#' The default of "\code{all}" will control all animations within the Shiny application.
-#' @param session The Shiny session object. Defaults to the current reactive domain.
+#' @param name A character string specifying the name of the 'Lottie' animation to control.
+#' The default of "\code{all}" will control all animations within the 'shiny' application.
+#' @param session The 'shiny' session object. Defaults to the current reactive domain.
 #' @name lottie_playback_controls
+#'
+#' @return These functions are called for a side effect, and so there is no return value.
 #'
 #' @details Each function sends a corresponding custom session message containing the function arguments:
 #'\itemize{
@@ -13,7 +15,6 @@
 #'   \item Pause: "\code{lottie_js_pause}"
 #'   \item Stop: "\code{lottie_js_stop}"
 #' }
-#'
 #'
 #' @examplesIf interactive()
 #' library(shiny)

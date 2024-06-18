@@ -1,12 +1,14 @@
-#' Call a Lottie Method
+#' Call a 'Lottie' Method
 #'
-#' Call a method for a specific Lottie animation, or all Lottie animations.
+#' Call a method for a specific 'Lottie' animation or all 'Lottie' animations.
 #'
-#' @param name A character string specifying the name of the Lottie animation to query.
-#' The default of "\code{all}" will retrieve the specified property from all Lottie animations within the Shiny application.
+#' @param name A character string specifying the name of the 'Lottie' animation to query.
+#' The default of "\code{all}" will retrieve the specified property from all 'Lottie' animations within the 'shiny' application.
 #' @param method A character string specifying the name of the method to call.
 #' @param argument A character string specifying any optional arguments to pass to the method.
-#' @param session The Shiny session object. Defaults to the current reactive domain.
+#' @param session The 'shiny' session object. Defaults to the current reactive domain.
+#'
+#' @return This function is called for a side effect, and so there is no return value.
 #'
 #' @details Sends a custom session message \code{"lottie_js_callMethod"} containing the function arguments.
 #'

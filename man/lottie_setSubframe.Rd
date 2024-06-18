@@ -2,7 +2,7 @@
 % Please edit documentation in R/lottie_setSubframe.R
 \name{lottie_setSubframe}
 \alias{lottie_setSubframe}
-\title{Set Subframe Rendering}
+\title{Set 'Lottie' Animation Subframe Rendering}
 \usage{
 lottie_setSubframe(
   flag,
@@ -11,15 +11,18 @@ lottie_setSubframe(
 )
 }
 \arguments{
-\item{flag}{A logical value specifying whether a Lottie animation should use subframe rendering (\code{TRUE}) or not (\code{FALSE}).}
+\item{flag}{A logical value specifying whether a 'Lottie' animation should use subframe rendering (\code{TRUE}) or not (\code{FALSE}).}
 
-\item{name}{A character string specifying the name of the Lottie animation to control.
-The default of "\code{all}" will control all animations within the Shiny application.}
+\item{name}{A character string specifying the name of the 'Lottie' animation to control.
+The default of "\code{all}" will control all animations within the 'shiny' application.}
 
-\item{session}{The Shiny session object. Defaults to the current reactive domain.}
+\item{session}{The 'shiny' session object. Defaults to the current reactive domain.}
+}
+\value{
+This function is called for a side effect, and so there is no return value.
 }
 \description{
-Adjust the subframe rendering of a Lottie animation.
+Adjust the subframe rendering of a 'Lottie' animation.
 }
 \details{
 Sends a custom session message \code{"lottie_js_setSubframe"} containing the function arguments.

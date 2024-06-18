@@ -16,10 +16,10 @@ knitr::opts_chunk$set(
 
 ## Methods
 
-Lottie offers several methods for controlling various aspects of animations, and shinyLottie provides options for calling these methods when initialising the animation or updating them at a later point. The table below documents the most common methods:
+'Lottie' offers several methods for controlling various aspects of animations, and 'shinyLottie' provides options for calling these methods when initialising the animation or updating them at a later point. The table below documents the most common methods:
 
-| Method                 | `lottie_animation()` argument | shinyLottie Function                                                        |
-|------------------------|-------------------------------|-----------------------------------------------------------------------------|
+| Method                 | `lottie_animation()` argument | 'shinyLottie' Function                                                      |
+|-----------------|-----------------|---------------------------------------|
 | Loop                   | `loop`                        | `lottie_setLoop()`                                                          |
 | Autoplay               | `autoplay`                    | `lottie_play()`, `lottie_pause()`, and `lottie_stop()`                      |
 | Speed                  | `speed`                       | `lottie_setSpeed()`                                                         |
@@ -53,13 +53,13 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 ```
 
-Note that when calling `lottie_setSpeed()`, we reference the name of the animation we wish to target (in this case, `"my_animation"`). This is consistent across virtually all shinyLottie functions, allowing for fine control over the animations in your Shiny app (i.e. being able to update the speed of a single animation, rather than all animations). Alternatively, the default default `name` value of `"all"` can be used to target all animations in the app.
+Note that when calling `lottie_setSpeed()`, we reference the name of the animation we wish to target (in this case, `"my_animation"`). This is consistent across virtually all 'shinyLottie' functions, allowing for fine control over the animations in your 'shiny' app (i.e. being able to update the speed of a single animation, rather than all animations). Alternatively, the default default `name` value of `"all"` can be used to target all animations in the app.
 
-Finally, if you want to call a Lottie method for which shinyLottie does not provide a function for, this can be achieved using `lottie_callMethod()`.
+Finally, if you want to call a 'Lottie' method for which 'shinyLottie' does not provide a function for, this can be achieved using `lottie_callMethod()`.
 
 ## Properties
 
-Lottie animations have a number of properties that can be queried during runtime. The example below demonstrates how to query the 'playCount' property of an animation using `lottie_getProperty()`.
+'Lottie' animations have a number of properties that can be queried during runtime. The example below demonstrates how to query the 'playCount' property of an animation using `lottie_getProperty()`.
 
 ```{r eval = FALSE}
 library(shiny)

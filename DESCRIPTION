@@ -1,10 +1,9 @@
 Package: shinyLottie
 Type: Package
-Title: Seamlessly Integrate Lottie Animation into Shiny Applications
+Title: Seamlessly Integrate 'Lottie' Animations into 'shiny' Applications
 Version: 1.0.0
-Author: Cameron Howitt
-Maintainer: Cameron Howitt <shinylottie@gmail.com>
-Description: Easily integrate and control Lottie animations within Shiny applications, without the need for idiosyncratic expression or use of JavaScript. This includes utilities for generating animation instances, controlling playback, manipulating animation properties, and more.
+Authors@R: c(person("Cameron", "Howitt", role = c("aut", "cre", "cph"), email = "shinylottie@gmail.com"))
+Description: Easily integrate and control 'Lottie' animations within 'shiny' applications', without the need for idiosyncratic expression or use of 'JavaScript'. This includes utilities for generating animation instances, controlling playback, manipulating animation properties, and more. For more information on 'Lottie', see: <https://airbnb.io/lottie/#/>. Additionally, see the official 'Lottie' GitHub repository at <https://github.com/airbnb/lottie>.
 Imports:
     shiny,
     jsonlite,

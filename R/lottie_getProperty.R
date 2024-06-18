@@ -1,16 +1,16 @@
-#' @title Get a Property of a Lottie Animation
+#' @title Get a Property of a 'Lottie' Animation
 #'
-#' @description Get a property from a specific Lottie animation or all Lottie animations.
+#' @description Get a property from a specific 'Lottie' animation or all 'Lottie' animations.
 #'
 #' @param property A character string specifying the name of the property to retrieve.
-#' @param name A character string specifying the name of the Lottie animation to query.
-#' The default of "\code{all}" will retrieve the specified property from all animations within the Shiny application.
-#' @param session The Shiny session object. Defaults to the current reactive domain.
+#' @param name A character string specifying the name of the 'Lottie' animation to query.
+#' The default of "\code{all}" will retrieve the specified property from all animations within the 'shiny' application.
+#' @param session The 'shiny' session object. Defaults to the current reactive domain.
 #'
 #' @details Sends a custom session message \code{"lottie_js_getProperty"} containing the function arguments.
 #'
 #' @return The return value(s) can be retrieved from within a reactive context by accessing the input
-#' object of the Shiny session, where the value has been assigned as the property name. For example, if accessing the
+#' object of the 'shiny' session, where the value has been assigned as the property name. For example, if accessing the
 #' \code{playCount} property, the return value can be retrieved via \code{input$playCount}.
 #'
 #' If \code{name = "all"} has been specified, then the return object will be a list, with named elements

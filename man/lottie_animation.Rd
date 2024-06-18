@@ -2,7 +2,7 @@
 % Please edit documentation in R/lottie_animation.R
 \name{lottie_animation}
 \alias{lottie_animation}
-\title{Generate Lottie Animation for Shiny}
+\title{Generate 'Lottie' Animation for a 'shiny' application}
 \usage{
 lottie_animation(
   path,
@@ -35,22 +35,22 @@ lottie_animation(
 \describe{
   \item{\code{speed}}{A numeric specifying the desired animation speed.}
   \item{\code{direction}}{Either \code{1} for forward playback or \code{-1} for reverse playback.}
-  \item{\code{setSubFrame}}{A logical value specifying whether a Lottie animation should loop (\code{TRUE}) or not (\code{FALSE}).}
+  \item{\code{setSubFrame}}{A logical value specifying whether a 'Lottie' animation should loop (\code{TRUE}) or not (\code{FALSE}).}
   \item{\code{playSegments}}{A numeric vector or list of numeric vectors indicating the segment(s) to be played.}
   \item{\code{forceFlag}}{Logical value indicating whether to force the animation to play the specified segments immediately (\code{TRUE}) or wait until the current animation completes (\code{FALSE}).}
 }}
 
-\item{session}{The Shiny session object. Defaults to the current reactive domain.}
+\item{session}{The 'shiny' session object. Defaults to the current reactive domain.}
 }
 \value{
 A list containing the following elements:
 \describe{
-  \item{\code{div}}{An HTML \code{div} element serving as the Lottie animation container.}
-  \item{\code{script}}{A \code{script} tag containing the JavaScript code to initialise the Lottie animation.}
+  \item{\code{div}}{An HTML \code{div} element serving as the 'Lottie' animation container.}
+  \item{\code{script}}{A \code{script} tag containing the 'JavaScript' to initialise the 'Lottie' animation.}
 }
 }
 \description{
-Generates a Lottie animation for use within a Shiny application.
+Generates a 'Lottie' animation for use within a 'shiny' application.
 }
 \section{Note}{
  When using a local file path, you may need to use \code{\link[shiny:addResourcePath]{addResourcePath}}.

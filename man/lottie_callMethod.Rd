@@ -2,7 +2,7 @@
 % Please edit documentation in R/lottie_callMethod.R
 \name{lottie_callMethod}
 \alias{lottie_callMethod}
-\title{Call a Lottie Method}
+\title{Call a 'Lottie' Method}
 \usage{
 lottie_callMethod(
   name = "all",
@@ -12,17 +12,20 @@ lottie_callMethod(
 )
 }
 \arguments{
-\item{name}{A character string specifying the name of the Lottie animation to query.
-The default of "\code{all}" will retrieve the specified property from all Lottie animations within the Shiny application.}
+\item{name}{A character string specifying the name of the 'Lottie' animation to query.
+The default of "\code{all}" will retrieve the specified property from all 'Lottie' animations within the 'shiny' application.}
 
 \item{method}{A character string specifying the name of the method to call.}
 
 \item{argument}{A character string specifying any optional arguments to pass to the method.}
 
-\item{session}{The Shiny session object. Defaults to the current reactive domain.}
+\item{session}{The 'shiny' session object. Defaults to the current reactive domain.}
+}
+\value{
+This function is called for a side effect, and so there is no return value.
 }
 \description{
-Call a method for a specific Lottie animation, or all Lottie animations.
+Call a method for a specific 'Lottie' animation or all 'Lottie' animations.
 }
 \details{
 Sends a custom session message \code{"lottie_js_callMethod"} containing the function arguments.

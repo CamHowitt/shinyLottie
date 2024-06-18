@@ -1,6 +1,6 @@
-#' Lottie Animation Methods
+#' 'Lottie' Animation Methods
 #'
-#' These functions provide methods for modifying the playback options of existing Lottie animations.
+#' These functions provide methods for modifying the playback options of existing 'Lottie' animations.
 #'
 #' @details
 #' \itemize{

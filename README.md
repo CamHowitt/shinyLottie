@@ -6,15 +6,15 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The shinyLottie package allows users to easily integrate and control
-Lottie animations within Shiny applications, without the need for
-idiosyncratic expression or use of JavaScript. This includes utilities
+The ‘shinyLottie’ package allows users to easily integrate and control
+‘Lottie’ animations within ‘shiny’ applications, without the need for
+idiosyncratic expression or use of ‘JavaScript’. This includes utilities
 for generating animation instances, controlling playback, manipulating
 animation properties, and more.
 
 ## Installation
 
-You can install the development version of shinyLottie from
+You can install the development version of ‘shinyLottie’ from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -24,8 +24,8 @@ devtools::install_github("CamHowitt/shinyLottie")
 
 ## Example
 
-Introducing Lottie animations to a Shiny app can be accomplished using
-just two shinyLottie functions:
+Introducing ‘Lottie’ animations to a ‘shiny’ app can be accomplished
+using just two ‘shinyLottie’ functions:
 
 ``` r
 library(shiny)

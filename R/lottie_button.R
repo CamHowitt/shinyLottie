@@ -1,9 +1,9 @@
-#' Convert a Lottie Animation to a Button
+#' Convert a 'Lottie' Animation to a Button
 #'
-#' Wraps a Lottie animation within a button element for use in Shiny applications.
+#' Wraps a 'Lottie' animation within a button element for use in 'shiny' applications.
 #'
-#' @param animation A Lottie animation created by \code{\link{lottie_animation}}.
-#' @param inputId The Shiny \code{input} slot that will be used to access the value.
+#' @param animation A 'Lottie' animation created by \code{\link{lottie_animation}}.
+#' @param inputId The 'shiny' \code{input} slot that will be used to access the value.
 #' @param label Optional text label to display below the animation inside the button.
 #' @param width Width of the button. This is validated using \code{\link[htmltools:validateCssUnit]{validateCssUnit}}.
 #' @param height Height of the button. This is validated using \code{\link[htmltools:validateCssUnit]{validateCssUnit}}.

@@ -2,9 +2,9 @@
 % Please edit documentation in R/lottie_animation_methods.R
 \name{lottie_animation_methods}
 \alias{lottie_animation_methods}
-\title{Lottie Animation Methods}
+\title{'Lottie' Animation Methods}
 \description{
-These functions provide methods for modifying the playback options of existing Lottie animations.
+These functions provide methods for modifying the playback options of existing 'Lottie' animations.
 }
 \details{
 \itemize{

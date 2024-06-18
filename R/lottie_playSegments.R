@@ -1,12 +1,14 @@
-#' @title Play Specific Segments of a Lottie Animation
+#' @title Play Specific Segments of a 'Lottie' Animation
 #'
-#' @description Play specific segments of a Lottie animation.
+#' @description Play specific segments of a 'Lottie' animation.
 #'
 #' @param segments A numeric vector or list of numeric vectors indicating the segment(s) to be played.
 #' @param forceFlag Logical value indicating whether to force the animation to play the specified segments immediately (\code{TRUE}) or wait until the current animation completes (\code{FALSE}).
-#' @param name A character string specifying the name of the Lottie animation to control.
-#' The default of "\code{all}" will control all animations within the Shiny application.
-#' @param session The Shiny session object. Defaults to the current reactive domain.
+#' @param name A character string specifying the name of the 'Lottie' animation to control.
+#' The default of "\code{all}" will control all animations within the 'shiny' application.
+#' @param session The 'shiny' session object. Defaults to the current reactive domain.
+#'
+#' @return This function is called for a side effect, and so there is no return value.
 #'
 #' @details Sends a custom session message \code{"lottie_js_playSegments"} containing the function arguments.
 #'

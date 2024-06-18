@@ -2,7 +2,7 @@
 % Please edit documentation in R/lottie_playSegments.R
 \name{lottie_playSegments}
 \alias{lottie_playSegments}
-\title{Play Specific Segments of a Lottie Animation}
+\title{Play Specific Segments of a 'Lottie' Animation}
 \usage{
 lottie_playSegments(
   segments,
@@ -16,13 +16,16 @@ lottie_playSegments(
 
 \item{forceFlag}{Logical value indicating whether to force the animation to play the specified segments immediately (\code{TRUE}) or wait until the current animation completes (\code{FALSE}).}
 
-\item{name}{A character string specifying the name of the Lottie animation to control.
-The default of "\code{all}" will control all animations within the Shiny application.}
+\item{name}{A character string specifying the name of the 'Lottie' animation to control.
+The default of "\code{all}" will control all animations within the 'shiny' application.}
 
-\item{session}{The Shiny session object. Defaults to the current reactive domain.}
+\item{session}{The 'shiny' session object. Defaults to the current reactive domain.}
+}
+\value{
+This function is called for a side effect, and so there is no return value.
 }
 \description{
-Play specific segments of a Lottie animation.
+Play specific segments of a 'Lottie' animation.
 }
 \details{
 Sends a custom session message \code{"lottie_js_playSegments"} containing the function arguments.

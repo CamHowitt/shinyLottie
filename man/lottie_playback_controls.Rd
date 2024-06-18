@@ -5,7 +5,7 @@
 \alias{lottie_play}
 \alias{lottie_pause}
 \alias{lottie_stop}
-\title{Control Playback of Lottie Animations}
+\title{Control Playback of 'Lottie' Animations}
 \usage{
 lottie_play(name = "all", session = shiny::getDefaultReactiveDomain())
 
@@ -14,13 +14,16 @@ lottie_pause(name = "all", session = shiny::getDefaultReactiveDomain())
 lottie_stop(name = "all", session = shiny::getDefaultReactiveDomain())
 }
 \arguments{
-\item{name}{A character string specifying the name of the Lottie animation to control.
-The default of "\code{all}" will control all animations within the Shiny application.}
+\item{name}{A character string specifying the name of the 'Lottie' animation to control.
+The default of "\code{all}" will control all animations within the 'shiny' application.}
 
-\item{session}{The Shiny session object. Defaults to the current reactive domain.}
+\item{session}{The 'shiny' session object. Defaults to the current reactive domain.}
+}
+\value{
+These functions are called for a side effect, and so there is no return value.
 }
 \description{
-Control the playback of Lottie animations within a Shiny application.
+Control the playback of 'Lottie' animations within a 'shiny' application.
 }
 \details{
 Each function sends a corresponding custom session message containing the function arguments:

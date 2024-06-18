@@ -81,7 +81,7 @@
 <h2 id="adding-event-listeners">Adding Event Listeners<a class="anchor" aria-label="anchor" href="#adding-event-listeners"></a>
 </h2>
 <p>Event listeners provide a way of introducing interactivity into our
-Lottie animations; for example, we could have an event trigger when we
+‘Lottie’ animations; for example, we could have an event trigger when we
 mouse over an animation or when an animation completes. However,
 choosing the right event requires an understanding of whether we should
 be targeting the animation container, or the animation itself.</p>
@@ -103,7 +103,7 @@ two event listeners (one for a ‘mouseenter’ event and another for a
 user hovers their mouse over the button.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://shiny.posit.co/" class="external-link">shiny</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">shinyLottie</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://camhowitt.github.io/shinyLottie/">shinyLottie</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">ui</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/shiny/man/fluidPage.html" class="external-link">fluidPage</a></span><span class="op">(</span></span>
 <span>  <span class="fu"><a href="../reference/include_lottie.html">include_lottie</a></span><span class="op">(</span><span class="op">)</span>,</span>
@@ -126,16 +126,16 @@ user hovers their mouse over the button.</p>
 <div class="section level3">
 <h3 id="target-the-animation">Target the Animation<a class="anchor" aria-label="anchor" href="#target-the-animation"></a>
 </h3>
-<p>There are some <strong>events that are specific to Lottie
-animations</strong>, which are documented <a href="https://github.com/airbnb/lottie-web?tab=readme-ov-file#events" class="external-link">here</a>.
+<p>There are some <strong>events that are specific to ‘Lottie’</strong>
+<strong>animations</strong>, which are documented <a href="https://github.com/airbnb/lottie-web?tab=readme-ov-file#events" class="external-link">here</a>.
 These generally track the internal state of the animation (i.e. the
 animation has reached a certain frame or has completed). The example
 below demonstrates a simple use case for the ‘onComplete’ event where we
-execute an arbitrary JavaScript snippet to print a message to the
+execute an arbitrary ‘JavaScript’ snippet to print a message to the
 browser’s console.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://shiny.posit.co/" class="external-link">shiny</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">shinyLottie</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://camhowitt.github.io/shinyLottie/">shinyLottie</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">ui</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/shiny/man/fluidPage.html" class="external-link">fluidPage</a></span><span class="op">(</span></span>
 <span>  <span class="fu"><a href="../reference/include_lottie.html">include_lottie</a></span><span class="op">(</span><span class="op">)</span>,</span>
@@ -163,21 +163,21 @@ browser’s console.</p>
 Similar to <code><a href="../reference/lottie_addEventListener.html">lottie_addEventListener()</a></code>, we must supply the
 animation <code>name</code>, the event <code>type</code>, and the
 <code>target</code>.</p>
-<p>In the example below, we initialise a Lottie animation with an event
-listener that will assign the current ‘playCount’ value to a Shiny input
-value (<code>input$playCount</code>). Through the use of an
-<code><a href="https://rdrr.io/pkg/shiny/man/observeEvent.html" class="external-link">observeEvent()</a></code>, a notification is displayed each time this
-input value is updated. This will continue until the user clicks the
-‘Remove Event Listener’ button which triggers a call to
+<p>In the example below, we initialise a ‘Lottie’ animation with an
+event listener that will assign the current ‘playCount’ value to a
+‘shiny’ input value (<code>input$playCount</code>). Through the use of
+an <code><a href="https://rdrr.io/pkg/shiny/man/observeEvent.html" class="external-link">observeEvent()</a></code>, a notification is displayed each time
+this input value is updated. This will continue until the user clicks
+the ‘Remove Event Listener’ button which triggers a call to
 <code><a href="../reference/lottie_removeEventListener.html">lottie_removeEventListener()</a></code>, causing the input value to no
 longer update, and therefore ceasing the notifications.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://shiny.posit.co/" class="external-link">shiny</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">shinyLottie</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://camhowitt.github.io/shinyLottie/">shinyLottie</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">ui</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/shiny/man/fluidPage.html" class="external-link">fluidPage</a></span><span class="op">(</span></span>
 <span>  <span class="fu"><a href="../reference/include_lottie.html">include_lottie</a></span><span class="op">(</span><span class="op">)</span>,</span>
-<span>  <span class="co"># Create an 'animation' event that updates the 'playCount' Shiny input</span></span>
+<span>  <span class="co"># Create an 'animation' event that updates the 'playCount' input value</span></span>
 <span>  <span class="co"># value after each loop</span></span>
 <span>  <span class="fu"><a href="../reference/lottie_animation.html">lottie_animation</a></span><span class="op">(</span></span>
 <span>    path <span class="op">=</span> <span class="st">"shinyLottie/example.json"</span>,</span>

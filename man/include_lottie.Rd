@@ -2,23 +2,23 @@
 % Please edit documentation in R/include_lottie.R
 \name{include_lottie}
 \alias{include_lottie}
-\title{Include Lottie Functionality within Shiny}
+\title{Include 'Lottie' Functionality within 'shiny'}
 \usage{
 include_lottie(version = "5.12.2")
 }
 \arguments{
-\item{version}{A character string specifying the version of the Lottie library to source via CDN.}
+\item{version}{A character string specifying the version of the 'Lottie' library to source via CDN.}
 }
 \value{
-A list of HTML tags to be included within the head element of a Shiny application.
+A list of HTML tags to be included within the head element of a 'shiny' application.
 }
 \description{
-Responsible for retrieving the Lottie library and initialising the relevant shinyLottie JavaScript code.
-As such, this function \strong{must} be included within the UI object of a \code{\link[shiny:shinyApp]{shinyApp}} in order to enable shinyLottie functionality.
+Responsible for retrieving the 'Lottie' library and initialising the necessary 'JavaScript' library.
+As such, this function \strong{must} be included within the UI object of a \code{\link[shiny:shinyApp]{shinyApp}} in order to enable 'shinyLottie' functionality.
 }
 \note{
 Calling this function initialises a global object "\code{window.lottieInstances}" once the DOM content is fully loaded.
-This is used to store the Lottie animations that are created using \code{\link{lottie_animation}}.
+This is used to store the 'Lottie' animations that are created using \code{\link{lottie_animation}}.
 }
 \examples{
 \dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}

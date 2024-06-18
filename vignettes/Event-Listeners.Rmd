@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 ## Adding Event Listeners
 
-Event listeners provide a way of introducing interactivity into our Lottie animations; for example, we could have an event trigger when we mouse over an animation or when an animation completes. However, choosing the right event requires an understanding of whether we should be targeting the animation container, or the animation itself.
+Event listeners provide a way of introducing interactivity into our 'Lottie' animations; for example, we could have an event trigger when we mouse over an animation or when an animation completes. However, choosing the right event requires an understanding of whether we should be targeting the animation container, or the animation itself.
 
 ### Target the Container
 
@@ -53,7 +53,7 @@ shinyApp(ui, server)
 
 ### Target the Animation
 
-There are some **events that are specific to Lottie animations**, which are documented [here](https://github.com/airbnb/lottie-web?tab=readme-ov-file#events). These generally track the internal state of the animation (i.e. the animation has reached a certain frame or has completed). The example below demonstrates a simple use case for the 'onComplete' event where we execute an arbitrary JavaScript snippet to print a message to the browser's console.
+There are some **events that are specific to 'Lottie'** **animations**, which are documented [here](https://github.com/airbnb/lottie-web?tab=readme-ov-file#events). These generally track the internal state of the animation (i.e. the animation has reached a certain frame or has completed). The example below demonstrates a simple use case for the 'onComplete' event where we execute an arbitrary 'JavaScript' snippet to print a message to the browser's console.
 
 ```{r eval = FALSE}
 library(shiny)
@@ -81,7 +81,7 @@ shinyApp(ui, server)
 
 It's also possible to disable this interactivity by using `lottie_removeEventListener()` to remove an event listener. Similar to `lottie_addEventListener()`, we must supply the animation `name`, the event `type`, and the `target`.
 
-In the example below, we initialise a Lottie animation with an event listener that will assign the current 'playCount' value to a Shiny input value (`input$playCount`). Through the use of an `observeEvent()`, a notification is displayed each time this input value is updated. This will continue until the user clicks the 'Remove Event Listener' button which triggers a call to `lottie_removeEventListener()`, causing the input value to no longer update, and therefore ceasing the notifications.
+In the example below, we initialise a 'Lottie' animation with an event listener that will assign the current 'playCount' value to a 'shiny' input value (`input$playCount`). Through the use of an `observeEvent()`, a notification is displayed each time this input value is updated. This will continue until the user clicks the 'Remove Event Listener' button which triggers a call to `lottie_removeEventListener()`, causing the input value to no longer update, and therefore ceasing the notifications.
 
 ```{r eval = FALSE}
 library(shiny)
@@ -89,7 +89,7 @@ library(shinyLottie)
 
 ui <- fluidPage(
   include_lottie(),
-  # Create an 'animation' event that updates the 'playCount' Shiny input
+  # Create an 'animation' event that updates the 'playCount' input value
   # value after each loop
   lottie_animation(
     path = "shinyLottie/example.json",

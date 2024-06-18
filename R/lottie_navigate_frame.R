@@ -4,10 +4,12 @@
 #'
 #' @param value A numeric value specifying the frame or time to go to.
 #' @param isFrame A logical value indicating whether \code{value} is a frame number (\code{TRUE}) or time (\code{FALSE}).
-#' @param name A character string specifying the name of the Lottie animation to control.
-#' The default of "\code{all}" will control all animations within the Shiny application.
-#' @param session The Shiny session object. Defaults to the current reactive domain.
+#' @param name A character string specifying the name of the 'Lottie' animation to control.
+#' The default of "\code{all}" will control all animations within the 'shiny' application.
+#' @param session The 'shiny' session object. Defaults to the current reactive domain.
 #' @name lottie_navigate_frame
+#'
+#' @return These functions are called for a side effect, and so there is no return value.
 #'
 #' @details
 #' \code{lottie_goToAndStop} moves the animation to a specific frame or time, then stops it.

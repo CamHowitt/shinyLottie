@@ -2,20 +2,23 @@
 % Please edit documentation in R/lottie_setLoop.R
 \name{lottie_setLoop}
 \alias{lottie_setLoop}
-\title{Adjust Animation Looping}
+\title{Adjust 'Lottie' Animation Looping}
 \usage{
 lottie_setLoop(flag, name = "all", session = shiny::getDefaultReactiveDomain())
 }
 \arguments{
-\item{flag}{Logical value specifying whether a Lottie animation should loop (\code{TRUE}) or not (\code{FALSE}).}
+\item{flag}{Logical value specifying whether a 'Lottie' animation should loop (\code{TRUE}) or not (\code{FALSE}).}
 
-\item{name}{A character string specifying the name of the Lottie animation to control.
-The default of "\code{all}" will control all animations within the Shiny application.}
+\item{name}{A character string specifying the name of the 'Lottie' animation to control.
+The default of "\code{all}" will control all animations within the 'shiny' application.}
 
-\item{session}{The Shiny session object. Defaults to the current reactive domain.}
+\item{session}{The 'shiny' session object. Defaults to the current reactive domain.}
+}
+\value{
+This function is called for a side effect, and so there is no return value.
 }
 \description{
-Adjust the looping behaviour of a Lottie animation.
+Adjust the looping behaviour of a 'Lottie' animation.
 }
 \details{
 Sends a custom session message \code{"lottie_js_setLoop"} containing the function arguments.

@@ -1,11 +1,13 @@
-#' @title Adjust Lottie Animation Direction
+#' @title Adjust 'Lottie' Animation Direction
 #'
-#' @description Adjust the playback direction of an existing Lottie animation.
+#' @description Adjust the playback direction of an existing 'Lottie' animation.
 #'
 #' @param direction Either \code{1} for forward playback or \code{-1} for reverse playback.
-#' @param name A character string specifying the name of the Lottie animation to control.
-#' The default of "\code{all}" will control all animations within the Shiny application.
-#' @param session The Shiny session object. Defaults to the current reactive domain.
+#' @param name A character string specifying the name of the 'Lottie' animation to control.
+#' The default of "\code{all}" will control all animations within the 'shiny' application.
+#' @param session The 'shiny' session object. Defaults to the current reactive domain.
+#'
+#' @return This function is called for a side effect, and so there is no return value.
 #'
 #' @details Sends a custom session message \code{"lottie_js_setDirection"} containing the function arguments.
 #'

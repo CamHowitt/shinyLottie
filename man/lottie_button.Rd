@@ -2,7 +2,7 @@
 % Please edit documentation in R/lottie_button.R
 \name{lottie_button}
 \alias{lottie_button}
-\title{Convert a Lottie Animation to a Button}
+\title{Convert a 'Lottie' Animation to a Button}
 \usage{
 lottie_button(
   animation,
@@ -14,9 +14,9 @@ lottie_button(
 )
 }
 \arguments{
-\item{animation}{A Lottie animation created by \code{\link{lottie_animation}}.}
+\item{animation}{A 'Lottie' animation created by \code{\link{lottie_animation}}.}
 
-\item{inputId}{The Shiny \code{input} slot that will be used to access the value.}
+\item{inputId}{The 'shiny' \code{input} slot that will be used to access the value.}
 
 \item{label}{Optional text label to display below the animation inside the button.}
 
@@ -30,7 +30,7 @@ lottie_button(
 An HTML button element enclosing the \code{animation} input object.
 }
 \description{
-Wraps a Lottie animation within a button element for use in Shiny applications.
+Wraps a 'Lottie' animation within a button element for use in 'shiny' applications.
 }
 \examples{
 \dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}

@@ -2,7 +2,7 @@
 % Please edit documentation in R/lottie_removeEventListener.R
 \name{lottie_removeEventListener}
 \alias{lottie_removeEventListener}
-\title{Remove Event Listener from Lottie Animation}
+\title{Remove Event Listener from 'Lottie' Animation}
 \usage{
 lottie_removeEventListener(
   name,
@@ -13,7 +13,7 @@ lottie_removeEventListener(
 )
 }
 \arguments{
-\item{name}{A character string specifying the name of the Lottie animation.}
+\item{name}{A character string specifying the name of the 'Lottie' animation.}
 
 \item{event}{The event to listen for (e.g. "\code{mouseenter}", "\code{mouseleave}" etc.).}
 
@@ -21,10 +21,13 @@ lottie_removeEventListener(
 
 \item{functionName}{Optional name of the event handler function to remove. Should only be used if a \code{functionName} was specified when calling \code{\link{lottie_addEventListener}}.}
 
-\item{session}{The Shiny session object. Defaults to the current reactive domain.}
+\item{session}{The 'shiny' session object. Defaults to the current reactive domain.}
+}
+\value{
+This function is called for a side effect, and so there is no return value.
 }
 \description{
-Removes an event listener from a Lottie animation within a Shiny application.
+Removes an event listener from a 'Lottie' animation within a 'shiny' application.
 }
 \details{
 When run within a reactive context, sends a custom session message \code{"lottie_js_runJS"} containing the function arguments.
@@ -36,7 +39,7 @@ library(shinyLottie)
 
 ui <- fluidPage(
   include_lottie(),
-  # Create an 'animation' event that updates the 'playCount' Shiny input
+  # Create an 'animation' event that updates the 'playCount' input value
   # value after each loop
   lottie_animation(
     path = "shinyLottie/example.json",

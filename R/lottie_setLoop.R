@@ -1,11 +1,13 @@
-#' @title Adjust Animation Looping
+#' @title Adjust 'Lottie' Animation Looping
 #'
-#' @description Adjust the looping behaviour of a Lottie animation.
+#' @description Adjust the looping behaviour of a 'Lottie' animation.
 #'
-#' @param flag Logical value specifying whether a Lottie animation should loop (\code{TRUE}) or not (\code{FALSE}).
-#' @param name A character string specifying the name of the Lottie animation to control.
-#' The default of "\code{all}" will control all animations within the Shiny application.
-#' @param session The Shiny session object. Defaults to the current reactive domain.
+#' @param flag Logical value specifying whether a 'Lottie' animation should loop (\code{TRUE}) or not (\code{FALSE}).
+#' @param name A character string specifying the name of the 'Lottie' animation to control.
+#' The default of "\code{all}" will control all animations within the 'shiny' application.
+#' @param session The 'shiny' session object. Defaults to the current reactive domain.
+#'
+#' @return This function is called for a side effect, and so there is no return value.
 #'
 #' @details Sends a custom session message \code{"lottie_js_setLoop"} containing the function arguments.
 #'

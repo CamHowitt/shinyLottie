@@ -1,10 +1,12 @@
-#' @title Destroy a Lottie Animation
+#' @title Destroy a 'Lottie' Animation
 #'
-#' @description Permanently destroy a specific Lottie animation or all Lottie animations.
+#' @description Permanently destroy a specific 'Lottie' animation or all 'Lottie' animations.
 #'
-#' @param name A character string specifying the name of the Lottie animation to destroy.
-#' The default of "\code{all}" will destroy all animations within the Shiny application.
-#' @param session The Shiny session object. Defaults to the current reactive domain.
+#' @param name A character string specifying the name of the 'Lottie' animation to destroy.
+#' The default of "\code{all}" will destroy all animations within the 'shiny' application.
+#' @param session The 'shiny' session object. Defaults to the current reactive domain.
+#'
+#' @return This function is called for a side effect, and so there is no return value.
 #'
 #' @details Sends a custom session message \code{"lottie_js_destroy"} containing the function arguments.
 #'

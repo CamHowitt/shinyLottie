@@ -2,18 +2,21 @@
 % Please edit documentation in R/lottie_destroy.R
 \name{lottie_destroy}
 \alias{lottie_destroy}
-\title{Destroy a Lottie Animation}
+\title{Destroy a 'Lottie' Animation}
 \usage{
 lottie_destroy(name = "all", session = shiny::getDefaultReactiveDomain())
 }
 \arguments{
-\item{name}{A character string specifying the name of the Lottie animation to destroy.
-The default of "\code{all}" will destroy all animations within the Shiny application.}
+\item{name}{A character string specifying the name of the 'Lottie' animation to destroy.
+The default of "\code{all}" will destroy all animations within the 'shiny' application.}
 
-\item{session}{The Shiny session object. Defaults to the current reactive domain.}
+\item{session}{The 'shiny' session object. Defaults to the current reactive domain.}
+}
+\value{
+This function is called for a side effect, and so there is no return value.
 }
 \description{
-Permanently destroy a specific Lottie animation or all Lottie animations.
+Permanently destroy a specific 'Lottie' animation or all 'Lottie' animations.
 }
 \details{
 Sends a custom session message \code{"lottie_js_destroy"} containing the function arguments.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/lottie_setDirection.R
 \name{lottie_setDirection}
 \alias{lottie_setDirection}
-\title{Adjust Lottie Animation Direction}
+\title{Adjust 'Lottie' Animation Direction}
 \usage{
 lottie_setDirection(
   direction = 1,
@@ -13,13 +13,16 @@ lottie_setDirection(
 \arguments{
 \item{direction}{Either \code{1} for forward playback or \code{-1} for reverse playback.}
 
-\item{name}{A character string specifying the name of the Lottie animation to control.
-The default of "\code{all}" will control all animations within the Shiny application.}
+\item{name}{A character string specifying the name of the 'Lottie' animation to control.
+The default of "\code{all}" will control all animations within the 'shiny' application.}
 
-\item{session}{The Shiny session object. Defaults to the current reactive domain.}
+\item{session}{The 'shiny' session object. Defaults to the current reactive domain.}
+}
+\value{
+This function is called for a side effect, and so there is no return value.
 }
 \description{
-Adjust the playback direction of an existing Lottie animation.
+Adjust the playback direction of an existing 'Lottie' animation.
 }
 \details{
 Sends a custom session message \code{"lottie_js_setDirection"} containing the function arguments.
