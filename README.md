@@ -14,12 +14,10 @@ animation properties, and more.
 
 ## Installation
 
-You can install the development version of ‘shinyLottie’ from
-[GitHub](https://github.com/) with:
+You can install the released version of \`shinyLottie\` from CRAN with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("CamHowitt/shinyLottie")
+install.packages("shinyLottie")
 ```
 
 ## Example
